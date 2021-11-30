@@ -27,6 +27,7 @@ body{
 }
 
 
+
 /* HEADER */
 header{
     width: 100%;
@@ -71,6 +72,15 @@ div .side-bar{
    padding: 5px 10px;
 }
 
+.bottom-menu{
+    padding: 0 5px;
+}
+
+.profile{
+    background-color: darkgrey;
+    border: 1px solid;
+    border-radius: 50px;
+}
 
 
 
@@ -84,7 +94,39 @@ footer{
     width: 100%;
 }
 
-/* COLORS */
+.song-img{
+    padding: 30px 10px
+}
+
+footer div a{
+    text-decoration: none;
+    color: darkgrey ;
+}
+
+footer ul li{
+    list-style-type: none;
+}
+
+.song-links{
+    align-items: center;
+    
+}
+.song-links ul{
+    display: flex;
+    flex-direction:column;
+}
+
+.song-links ul li i{
+    margin-left: 15px;
+    font-size: 15px;
+    color:darkgrey;
+}
+
+.song-links h4{
+    color: white;
+}
+
+/* BG-COLORS */
 
 .bg-black{
    background-color: black;
