@@ -1,7 +1,67 @@
+/* GENERICS */
 *{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
 }
 
-/*  */
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.clearfix::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+/* UTILITIES */
+
+.d-flex{
+    display: flex;
+}
+
+
+/* HEADER */
+header{
+    width: 100%;
+    height: 100px;
+    background-color: #080B12;
+    justify-content: end;
+    align-items: center;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 15px;
+    height: 40px;
+    border-radius: 40px;
+
+}
+
+
+/* MAIN */
+
+/* SIDE-BAR */
+
+/* PLAYER */
+
+/* COLORS */
+
+.bg-black{
+   background-color: black;
+}
+
+.bg-dark-blue{
+    background-color: #141922
+}
+
+.bg-gray{
+    background-color: #282828;
+}
+
+
+
+  
