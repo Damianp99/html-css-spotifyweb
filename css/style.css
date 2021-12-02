@@ -99,14 +99,19 @@ header a{
     flex-basis: 50%;
 }
 
-
-
 .card-song h3{
     margin: 10px 0;
     color: white;
 
 }
 
+.title-description{
+    color: lightgrey;
+}
+
+.radius-image{
+    border-radius: 50%;
+}
 
 /* NAV SIDE-BAR */
 .nav-bar{
@@ -268,4 +273,11 @@ footer ul li{
 
 
 
-  
+  /* MEDIA QUERY*/
+
+  @media screen and (min-width: 576px) {
+      .nav-bar{
+          
+      }
+
+  }
