@@ -14,21 +14,41 @@
 </head>
 
 <body>
-    <div class="nav-bar">
-        <div class="d-flex side-bar bg-black">
+    <!-- <div class="nav-bar"> -->
+    <div class="d-flex side-bar bg-black">
+        <div class="d-flex top-menu f-wrap">
             <figure class="top-menu">
-                <img src="img/logo-small.svg" alt="">
+                <img class="d-small-none" src="img/logo-small.svg" alt="">
+                <img class="d-small-in d-none " src="img/logo.svg" alt="">
                 <img src="img/home.svg" alt="">
                 <img src="img/search.svg" alt="">
                 <img src="img/libreria.svg" alt="">
             </figure>
-
-            <figure class="bottom-menu">
-                <img src="img/download.svg" alt="">
-                <img class="profile" src="img/profile.svg" alt="">
-            </figure>
+            <div class="playlist d-none d-small-in">
+                <ul>
+                    <li>
+                        <h3>Playlist</h3>
+                    </li>
+                    <li><i class="fas fa-plus-square"></i> Crea Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                </ul>
+            </div>
         </div>
+
+        <figure class="bottom-menu">
+            <img src="img/download.svg" alt="">
+            <span class="d-small-in d-none">Installa ap</span>
+            <hr>
+            <img class="profile" src="img/profile.svg" alt="">
+        </figure>
     </div>
+    <!-- </div> -->
 
     <main class=" d-flex bg-dark-blue">
         <header class="d-flex">

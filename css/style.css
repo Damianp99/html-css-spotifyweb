@@ -34,10 +34,9 @@ a{
     text-decoration: none;
 }
 
-img{
-    width: 100%;
+.d-none{
+    display: none;
 }
-
 
 /* HEADER */
 header{
@@ -62,8 +61,8 @@ header a{
 
 /* MAIN */
 .main-content{
-    padding-left: 60px;
-    padding-top: 110px;
+    margin-left: 60px;
+    margin-top: 110px;
     overflow-y: auto;
     flex-direction: column;  
 }
@@ -99,6 +98,10 @@ header a{
     flex-basis: 50%;
 }
 
+.card-song img{
+    width: 100%;
+}
+
 .card-song h3{
     margin: 10px 0;
     color: white;
@@ -114,9 +117,9 @@ header a{
 }
 
 /* NAV SIDE-BAR */
-.nav-bar{
+/* .nav-bar{
     position: relative;
-}
+} */
 
 .side-bar{
     flex-direction: column;
@@ -124,12 +127,20 @@ header a{
     position: absolute; 
     width: 50px;
     height: calc(100vh - 100px) ;
-    
-
 }
 
-.nav-bar div figure>img{
+.top-menu>img{
    padding: 5px 10px;
+   
+}
+
+.playlist ul{
+    color: lightgrey;
+    list-style-type: none;
+}
+
+.top-menu{
+    justify-content: center;
 }
 
 .bottom-menu{
@@ -139,7 +150,7 @@ header a{
 .profile{
     background-color: darkgrey;
     border: 1px solid;
-    border-radius: 50px;
+    border-radius: 50%;
 }
 
 
@@ -276,8 +287,50 @@ footer ul li{
   /* MEDIA QUERY*/
 
   @media screen and (min-width: 576px) {
-      .nav-bar{
+      .side-bar{
+          width: 150px;
           
       }
 
+      .top-menu>img{
+        padding: 5px 20px;
+     }
+
+     .bottom-menu{
+        padding: 5px 20px;
+
+     }
+
+     
+
+      .main-content{
+          margin-left: 160px;
+          margin-top: 110px;
+      }
+
+      .d-small-none{
+          display: none;
+      }
+
+      .d-small-in{
+          display: inline;
+      }
+
+
   }
+
+  @media screen and (min-width: 768px) {
+      .card-song{
+          flex-basis: 25%;
+          
+      }
+  }
+
+  @media screen and (min-width: 992px) {
+    .card-song{
+        flex-basis: calc(100% / 6);
+    }
+}
+
+
+  
