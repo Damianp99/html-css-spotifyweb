@@ -16,13 +16,20 @@
 <body>
     <!-- <div class="nav-bar"> -->
     <div class="d-flex side-bar bg-black">
-        <div class="d-flex top-menu f-wrap">
-            <figure class="top-menu">
-                <img class="d-small-none" src="img/logo-small.svg" alt="">
-                <img class="d-small-in d-none " src="img/logo.svg" alt="">
-                <img src="img/home.svg" alt="">
-                <img src="img/search.svg" alt="">
-                <img src="img/libreria.svg" alt="">
+        <div class="  d-flex f-wrap">
+            <figure class="top-menu ">
+                <img id="small-logo" class="d-small-none" src="img/logo-small.svg" alt="">
+                <img id="big-logo" class="d-small-in d-none " src="img/logo.svg" alt="">
+                <div class="card-top-menu">
+                    <img src="img/home.svg" alt=""> <span class="d-none d-small-in">Home</span>
+                </div>
+                <div class="card-top-menu">
+                    <img class="d-block" src="img/search.svg" alt=""> <span class="d-none d-small-in">Cerca</span>
+                </div>
+
+                <div class="card-top-menu">
+                    <img src="img/libreria.svg" alt=""> <span class="d-none d-small-in">Libreria</span>
+                </div>
             </figure>
             <div class="playlist d-none d-small-in">
                 <ul>
@@ -42,10 +49,16 @@
         </div>
 
         <figure class="bottom-menu">
-            <img src="img/download.svg" alt="">
-            <span class="d-small-in d-none">Installa ap</span>
-            <hr>
-            <img class="profile" src="img/profile.svg" alt="">
+            <div>
+                <img class="download" src="img/download.svg" alt="">
+                <span class=" d-small-in d-none">Installa app</span>
+            </div>
+            <hr class="d-small-in d-none">
+            <div class="spacing">
+                <img class="profile" src="img/profile.svg" alt="">
+                <span class=" d-small-in d-none">John Doe</span>
+            </div>
+
         </figure>
     </div>
     <!-- </div> -->
@@ -172,7 +185,7 @@
             <div class="player-time">
                 <span class="time"> 0:25 </span>
                 <span class="time-line">
-
+                    <span class="progress-bar"></span>
                 </span>
                 <span class="time"> 4:35 </span>
             </div>
@@ -183,7 +196,7 @@
             <i class="fas fa-desktop"></i>
             <i class="fas fa-volume-up"></i>
             <span class="volume-line">
-
+                <span class="progress-bar"></span>
             </span>
         </div>
 

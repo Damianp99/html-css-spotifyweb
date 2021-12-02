@@ -38,6 +38,10 @@ a{
     display: none;
 }
 
+.spacing{
+   
+}
+
 /* HEADER */
 header{
     width: 100%;
@@ -124,28 +128,44 @@ header a{
 .side-bar{
     flex-direction: column;
     justify-content: space-between;
+    
     position: absolute; 
     width: 50px;
     height: calc(100vh - 100px) ;
 }
 
-.top-menu>img{
-   padding: 5px 10px;
+.top-menu img{
+    padding: 5px 10px;
    
+    
+ }
+
+#small-logo{
+   height: 40px;
 }
+
+
 
 .playlist ul{
     color: lightgrey;
     list-style-type: none;
+    padding:5px 10px;
 }
 
 .top-menu{
     justify-content: center;
 }
 
+
+.bottom-menu img{
+    padding: 10px 10px;
+}
+
 .bottom-menu{
     padding: 0 5px;
 }
+
+
 
 .profile{
     background-color: darkgrey;
@@ -239,14 +259,17 @@ footer ul li{
 
 .time-line {
     width: 80%;
-    height: 2px;
-    color: white;
-   
+    margin: 0 10px;
+    height: 3px;
+    background-color: lightgrey;
+    padding:0 20px
 }
 
 .volume{
     width: 30%;
     flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 20px;
     align-items: center;
     font-size: 14px;
     color: lightgrey;
@@ -259,9 +282,16 @@ footer ul li{
 }
 
 .volume-line {
+    padding-right: 10px;
+    width: 30%;
+    height: 3px;
+    background-color: lightgrey;
+}
 
-    
-
+.progress-bar{
+    background-color: white;
+    height: 3px;
+    width: 70px;
 }
 
 
@@ -292,16 +322,47 @@ footer ul li{
           
       }
 
-      .top-menu>img{
-        padding: 5px 20px;
-     }
+      #big-logo{
+        height: 50px;
+    }
 
-     .bottom-menu{
-        padding: 5px 20px;
+      .top-menu img{
+          height: 30px;
+      }
 
-     }
+      .card-top-menu{
+          padding:0 10px; 
+      }
 
-     
+      figure span{
+          color:lightgrey
+      }
+
+      .playlist{
+          margin-top: 20px;
+      }
+
+      .playlist ul li{
+          padding-bottom: 10px;
+          font-size: 12px;
+          font-weight: 600;
+      }
+
+      .bottom-menu hr{
+          width: 90%;
+          margin:5px 5px;
+          
+      }
+
+      .bottom-menu{
+          padding: 5px 0px;
+          
+      }
+
+
+      .bottom-menu img{
+        height: 30px;
+    }
 
       .main-content{
           margin-left: 160px;
